@@ -1,0 +1,27 @@
+{
+  "name": "ekesha.test.service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "build:watch": "onchange 'src/**/*.ts' -- npm run build",
+    "clean": "rm -rf coverage src/**/*.js src/**/*.map",
+    "start": "ts-node src/main.ts",
+    "build": "tsc",
+    "live": "node build/main.js"
+  },
+  "keywords": [],
+  "author": "Ekesha Team",
+  "license": "ISC",
+  "dependencies": {
+    "@sinclair/typebox": "^0.23.1",
+    "fastify": "^3.25.3",
+    "fastify-formbody": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.5",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  }
+}
